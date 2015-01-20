@@ -1,0 +1,66 @@
+{
+    "name" : "BeeImoveis",
+    "description" : "The \"2CreativeGames Symfony Custom Edition\" distribution",
+    "type" : "project",
+    "license": "MIT",
+    "authors": [
+        {"name": "Glauber Oliveira", "email": "gkyves@gmail.com"}
+    ],
+    "version": "0.1.0",
+    "require" : {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.5.*",
+        "composer/composer": "1.0.*@dev",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
+        "twig/extensions": "~1.0",
+        "symfony/assetic-bundle": "~2.3",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0",
+        "sensio/generator-bundle" : "2.3.*",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "knplabs/knp-paginator-bundle" : "dev-master",
+        "knplabs/knp-snappy-bundle": "dev-master",
+        "h4cc/wkhtmltopdf-i386": "0.12.1"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "" : "src/"
+        }
+    },
+    "minimum-stability" : "stable",
+    "config" : {
+        "bin-dir" : "bin"
+    },
+    "scripts" : {
+        "post-update-cmd" : [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "post-install-cmd" : [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "2.3-dev"
+        },
+        "symfony-web-dir" : "web",
+        "symfony-app-dir" : "app",
+        "incenteev-parameters" : {
+            "file" : "app/config/parameters.yml"
+        }
+    }
+}
