@@ -1,3 +1,15 @@
-app:
-    resource: @AppBundle/Controller/
-    type:     annotation
+usuario:
+    resource: "@UsuarioBundle/Resources/config/routing.yml"
+    prefix:   /profile
+
+usuario_authenticate:
+    path:     /authenticate
+    defaults: { _controller: UsuarioBundle:Default:authenticate }
+    methods:   [POST]
+
+usuario_logout:
+    path:     /logout
+
+home_page:
+    pattern: /
+    defaults: { _controller: AppBundle:Default:index }

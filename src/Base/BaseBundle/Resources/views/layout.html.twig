@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>{% block title %}BeeImovéis{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block stylesheets %}
+        <link href="{{ asset('bundles/basebase/lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('bundles/basebase/lib/bootstrap/css/bootstrap-responsive.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('bundles/basebase/lib/jquery-ui-1.11.2.custom/jquery-ui.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('bundles/basebase/css/style.css') }}" rel="stylesheet"/>
+    {% endblock %}
+
+    {% block javascripts %}
+        <script type="text/javascript"
+                src="{{ asset('bundles/basebase/lib/jquery-ui-1.11.2.custom/external/jquery/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/basebase/lib/jquery-ui-1.11.2.custom/jquery-ui.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/basebase/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/basebase/js/functionality.js') }}"></script>
+    {% endblock %}
+
+</head>
+
+<body>
+<main class="contaianer-fluid mainContainer">
+
+<section class="row-fluid">
+
+<div class="span10 offset1 mainRow ">
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav optionMenu">
+                    <li class="logo">
+                        <a href="#">
+                            <img alt="BeeImovéis" src="{{ asset('bundles/basebase/img/logo.png') }}"/>
+                        </a>
+                    </li>
+                    <li><a>
+                            <div class="btn-group">
+                                <a class="btn optionCidade dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Distrito federal
+                                    <span class="  icon-chevron-down"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">...</a></li>
+                                    <li><a tabindex="-1" href="#">...</a></li>
+                                    <li class="divider"></li>
+                                    <li><a tabindex="-1" href="#">...</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="optioMenuLiMain">Apartamentos:</li>
+                    <li class="optioMenuLi"><a href="#">Asa Norte</a></li>
+                    <li class="optioMenuLi"><a href="#">Asa Sul</a></li>
+                    <li class="optioMenuLi"><a href="#">Lago norte</a></li>
+                    <li class="optioMenuLi"><a href="#">Lago Sul</a></li>
+
+                </ul>
+            </div>
+            <!-- /.nav-collapse -->
+        </div>
+    </div>
+    <!-- /navbar-inner -->
+</div>
+<aside class="asideLeft span3">
+    <div class="loginMain span12">
+        <form class="form-horizontal" method="post" action="{{ path('usuario_authenticate') }}">
+            <center>
+                <input class="emailLogin span10 required email" type="text" name="_username" placeholder="Email">
+                <input class="passLogin span10 required" type="password" name="_password" placeholder="Senha">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                <button class="btnLogin" type="submit"><p class="textLogin">Login</p></button>
+                <button class="btnRegister btn-link">Cadastre-se</button>
+                <button class="btcForgot btn-link">Esqueci a senha</button>
+            </center>
+        </form>
+
+    </div>
+
+    <div class="searchProperties span12">
+        <article class="titleSearch">Busque seu Imóvel</article>
+
+        <form>
+            <center>
+                <select class="span11">
+                    <option>Cidade</option>
+                </select>
+
+                <select class="span11">
+                    <option>Venda</option>
+                </select>
+
+                <select class="span11">
+                    <option>Cidade</option>
+                </select>
+
+                <select class="span11">
+                    <option>Bairro</option>
+                </select>
+
+                <select class="span11">
+                    <option>Apartamento</option>
+                </select>
+
+            </center>
+
+            <div class="checkbocProperties">
+                <label class="checkboxOption">
+                    <input type="checkbox"> Somente Imóveis prontos
+                </label>
+
+                <label class="checkboxOption">
+                    <input type="checkbox"> Somente Imóveis em construção
+                </label>
+
+                <label class="checkboxOptionMain">
+                    <input type="checkbox"> Somente Imóveis de particulares
+                </label>
+
+                <label class="checkboxOption">
+                    <input type="checkbox"> Aceitar Imóvel de menor valor
+                </label>
+            </div>
+            <center>
+                <input class="span11" type="text" placeholder="Localização (Ex, Bloco)"/>
+            </center>
+
+            <label class="checkboxOptionPrice">
+                Preço até
+            </label>
+            <center>
+                <div id="slider-range-min" class="span10 offset1"></div>
+                <input type="text" class="span11" id="amount" readonly style="border:0; color:#000; font-weight:bold;">
+
+                <div class="findProperty span11">
+                    Encontre Imóvel
+                </div>
+            </center>
+
+        </form>
+    </div>
+
+    <div class="facebookLike span12">
+    </div>
+
+    <div class="alertImoveis span12">
+        Receba alertas sobre o imóvel que procura
+    </div>
+
+</aside>
+
+<aside class="asideRight span8">
+
+    <div class="menuMain span12">
+        <ul class="optioSalesUL">
+            <li class="optioSalesLiMain">
+                <a href="#">
+                    <a class="mainSubPropriet">Anunciar</a>
+                                              <span class="mainSub"><br/>
+                                                 meu Imóvel
+                                              </span>
+                </a>
+            </li>
+            <li class="optioSalesLi">
+                <a href="#">
+                    Comprar
+                                              <span class="mainSob"><br/>
+                                                 Imóveis
+                                              </span>
+                </a>
+            </li>
+            <li class="optioSalesLi">
+                <a href="#">
+                    Imóveis
+                                              <span class="mainSob"><br/>
+                                                 a Venda
+                                              </span>
+                </a>
+            </li>
+            <li class="optioSalesLi">
+                <a href="#">
+                    Imóveis
+                                              <span class="mainSob"><br/>
+                                                 para Alugar
+                                              </span>
+                </a>
+            </li>
+            <li class="optioSalesLi">
+                <a href="#">
+                    Imóveis
+                                              <span class="mainSob"><br/>
+                                                 Comerciais
+                                              </span>
+                </a>
+            </li>
+            <li class="optioSalesLi">
+                <a href="#">
+                    Planos
+                          <span class="mainSob"><br/>
+                             e valores
+                          </span>
+                </a>
+            </li>
+            <li class="optioSalesLi">
+                <a href="#">
+                    Fale
+                                              <span class="mainSob"><br/>
+                                                 Conosco
+                                              </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="containerDestaque span12">
+        {% block body %}
+            lista aki
+        {% endblock %}
+    </div>
+
+</aside>
+
+</div>
+</section>
+</main>
+</body>
+</html>

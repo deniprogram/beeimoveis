@@ -1,12 +1,47 @@
 security:
+    encoders:
+        UsuarioBundle\Entity\TbUsuario:
+            algorithm: sha1
+            iterations: 1
+            encode_as_base64: false
+
     providers:
-        in_memory:
-            memory: ~
+        main:
+            id: security_provider
 
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt|error)|css|images|js)/
             security: false
 
-        default:
+#        default:
+#            anonymous: ~
+
+        login:
+            pattern:  ^/authenticate$
+            security: false
+
+        main:
+            provider: main
+            pattern: ^/profile
+            http_basic: ~
+            simple_form:
+                authenticator: authenticator
+                check_path: usuario_authenticate
+                login_path: ~
+                use_forward: false
+                default_target_path: /
+                use_referer: true
+                post_only: true
+                remember_me: false
+                csrf_provider: form.csrf_provider
+            logout:
+                path:   /logout
+                target: /
             anonymous: ~
+
+    role_hierarchy:
+        ROLE_USER:      [ROLE_USER]
+
+    access_control:
+         - { path: ^/profile, roles: [ROLE_USER] }

@@ -1,0 +1,266 @@
+body{ 
+	background: #e2e3e7; 
+}
+.mainContainer{
+	 
+}
+.mainRow{
+	 
+}
+.asideLeft{
+	 
+}
+.asideRight{
+	 
+}
+.loginMain{ 
+	height:200px; 
+	background-image: url("../img/backBusca.png") !important; 
+	background-repeat: repeat-x; 
+	padding:5px !important;
+	border-radius: 5px !important; 
+}
+.passLogin{
+	margin-top:10px !important;
+}
+.emailLogin{
+	margin-top:10px !important;
+}
+.btnLogin{
+	width: 109px; height: 40px;
+	background-image: url("../img/btnLogin.png") !important ; 
+	background-repeat: no-repeat !important; 
+	border:none !important; 
+	border-radius: 5px;
+	float: right;
+	margin-right: 17px;
+	margin-top:10px;
+}
+.btnRegister{
+	width: 109px; 
+	height: 40px;
+	margin-left: 10px;
+	font-family: Tahoma; 
+	float: left !important;
+	color: #fff;     
+	margin-top:10px;
+	text-decoration: underline;
+}
+.textLogin{
+	margin-right: 15px;
+	font-size: 18px;
+	font-family: Tahoma;
+	margin-top: 5px;
+}
+.btcForgot{
+	float: right;
+	color: #fff;
+	margin-right: 5px;
+	font-family: Tahoma; 
+	margin-top: 5px;
+	text-decoration: underline;
+}
+.searchProperties{
+	height: auto !important; 
+	margin-left: -0px !important;
+	background: #e5af21;
+	border-radius: 5px;
+	padding: 5px !important;
+	box-shadow: 0px 0px 5px #333;
+}
+.titleSearch{
+	font-size: 20px; 
+	color:#2b2b2c;
+	text-align:center;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.checkbocProperties{
+	margin-left:20px;
+}
+
+.checkboxOption{
+	font-weight:bold;
+	font-size: 13px;
+}
+
+.checkboxOptionMain{
+	color: red;
+	font-weight:bold;
+	font-size: 13px;
+}
+.checkboxOptionPrice{
+	font-weight:bold;
+	font-size: 13px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+#slider-range-min{
+	 
+	margin-bottom: 16px;
+	background: #333 !important; 
+	min-height: 5px !important; 
+	height:5px !important; 
+}
+.findProperty{
+ 	 
+	height: 54px;
+	background: url("../img/backSearch.png") no-repeat;
+	background-position: center center;
+	font-size: 20px;
+	color: #fff;
+	padding-top: 15px;
+ 
+} 
+.logo{
+	margin-left: 20px;
+}
+.navbar-inner{
+	background:none !important;
+	border:none !important; 
+	box-shadow: none !important;
+	margin-bottom: -10px !important;
+	background: url("../img/te.png") no-repeat !important; 
+	background-position: 500px -5px !important;
+}
+.optionMenu li{
+font-size: 11px;
+text-decoration: underline;
+}
+.optioMenuLiMain{
+	 color: #000 !important;
+	 margin-top: 49px;
+	 font-size: 14px !important;
+	 font-family:Helvetica !important;
+	 text-decoration: none !important;
+	 font-weight: bold;
+	 margin-left: 20px;
+}
+.optioMenuLi{
+ margin-top: 40px;
+ color: #000 !important;
+}
+.optioMenuLi a{
+ color: #000 !important;
+ font-size: 16px;
+ font-weight: 0 !important;
+
+}
+.optionCidade{
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	margin-top: 20px !important;
+	font-weight: bold;
+	font-size: 16px !important;
+	margin-left: 35px;
+}
+
+/* Container */
+.menuMain{
+	background-image: url("../img/backHome.jpg") !important; 
+	height: 58px;
+	border-radius: 5px !important;
+
+}
+.optioSalesUL li{
+	float:left !important;
+	 
+	padding-top: 10px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	list-style-type: none !important;
+	text-align: center;
+
+}
+.optioSalesUL li a{
+	color: #fff ;
+
+}
+.mainSob{
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+.optioSalesLiMain{
+	background:#e5af21;
+	width: 90px;color: #000 !important;
+	padding-top: 5px !important;
+	margin-top: 3px;
+	padding-bottom: 3px !important;
+	border-radius: 6px;
+	margin-left: -19px !important;
+}
+.optioSalesLiMain a{
+	color: #2b2b2c !important;
+}
+.mainSub{
+	font-size: 16px !important;
+	font-weight: 600;
+	font-family: arial !important;
+	color: #2b2b2c !important;
+}
+.mainSubPropriet{
+	font-size: 17px !important;
+}
+.facebookLike{
+	 margin-top:10px !important;
+	 background:#fff;
+	 padding:20px;
+	 margin-left:0px !important;
+	 border-radius:6px;
+	 height:auto;
+	 margin-bottom:5px;
+}
+.alertImoveis{
+	 margin-left:-3px !important;
+	 width:270px !important;
+	 height:216px;
+	 background: url("../img/recebaEmail.png") no-repeat !important; 
+	 font-size: 20px;
+	 color:#333;
+	 font-weight: bold; 
+	 text-align: center;
+	 padding-top:160px;
+	 font-family:arial;
+	 color:#2b2b2c;
+}
+.containerDestaque{
+	
+	padding:0px !important ;
+	margin:0px !important ;
+}
+.destaqueOne{
+	background:#fff;
+	margin-top:5px;
+	border-radius:5px;
+	 background: url("../img/tes.png") #fff no-repeat !important; 
+	 background-position: 0 250px !important;
+	
+}
+.destaquetTwo{
+	background:#fff;
+	margin-top:5px;
+	border-radius:5px;
+}
+.titleDestaqueOne{
+	font-size: 15px;
+	padding:0px !important;
+	margin:0px !important;
+	margin-left:10px !important;
+	
+}
+.imgDestaque img{
+	max-width:none !important;
+	margin-left:-30px !important;
+	margin-top:-20px;
+	border-right:5px solid #333;
+	border-bottom:5px solid #333;
+}
+.textDescribeDestaque{
+	text-align: center;
+	margin-bottom: 9px;
+}
+ 
+
+

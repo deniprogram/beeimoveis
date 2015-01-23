@@ -1,0 +1,3 @@
+base_crud_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BaseCrudBundle:Default:index }

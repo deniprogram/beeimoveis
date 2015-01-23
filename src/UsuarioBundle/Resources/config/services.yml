@@ -1,0 +1,11 @@
+services:
+    security_user:
+        class: UsuarioBundle\Entity\TbUsuario
+
+    security_provider:
+        class: UsuarioBundle\Security\UsuarioProvider
+        arguments: ["@security_user"]
+
+    authenticator:
+        class:     UsuarioBundle\Security\Authenticator
+        arguments: ["@security.password_encoder"]

@@ -1,0 +1,4 @@
+services:
+    base_crud.default:
+        class: Base\CrudBundle\Service\CrudService
+        arguments: ["@doctrine.orm.entity_manager"]

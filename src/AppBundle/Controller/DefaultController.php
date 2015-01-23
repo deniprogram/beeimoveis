@@ -2,16 +2,9 @@
 
 namespace AppBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Base\CrudBundle\Controller\CrudController;
 
-class DefaultController extends Controller
+class DefaultController extends CrudController
 {
-    /**
-     * @Route("/app/example", name="homepage")
-     */
-    public function indexAction()
-    {
-        return $this->render('default/index.html.twig');
-    }
+    protected $service = 'base_crud.default';
 }

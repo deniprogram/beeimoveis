@@ -1,0 +1,3 @@
+base_base_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BaseBaseBundle:Default:index }
