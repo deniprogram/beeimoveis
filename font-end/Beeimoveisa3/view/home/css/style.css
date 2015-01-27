@@ -1,0 +1,503 @@
+@media screen and (max-width:600px){
+	.asideRight{
+		display: none;
+	}
+	.footerMainTwe,.facebookLike, .alertImoveis, .footerMain, .linksMenuBootom, .destaqueSeo{
+		display: none;
+	}
+	.loginMain{ 
+		background-image: url("../img/backHome.jpg") !important; 
+	}
+
+}
+
+@media screen and (max-width:390px){
+	body{
+		background: red;
+	}
+}
+body{ 
+	background: #e2e3e7; 
+}
+.mainContainer{
+	 
+}
+.mainRow{
+	 
+}
+.asideLeft{
+	 
+}
+.asideRight{
+	 
+}
+.emailLogin{
+
+}
+.loginMain{ 
+	height:200px; 
+	background-image: url("../img/backBusca.png") !important; 
+	background-repeat: repeat-x; 
+	padding:10px !important;
+	border-radius: 5px !important; 
+}
+.passLogin{
+	margin-top:10px !important;
+}
+.emailLogin{
+	margin-top:10px !important;
+}
+.btnLogin{
+	width: 109px; height: 40px;
+	background-image: url("../img/btnLogin.png") !important ; 
+	background-repeat: no-repeat !important; 
+	border:none !important; 
+	border-radius: 5px;
+	float: right;
+	margin-right: 17px;
+	margin-top:10px;
+}
+.btnRegister{
+	width: 109px; 
+	height: 40px;
+	margin-left: 10px;
+	font-family: Tahoma; 
+	float: left !important;
+	color: #fff;     
+	margin-top:10px;
+	text-decoration: underline;
+}
+.textLogin{
+	margin-right: 15px;
+	font-size: 18px;
+	font-family: Tahoma;
+	margin-top: 5px;
+}
+.btcForgot{
+	float: right;
+	color: #fff;
+	margin-right: 5px;
+	font-family: Tahoma; 
+	margin-top: 5px;
+	text-decoration: underline;
+}
+.searchProperties{
+	height: auto !important; 
+	margin-left: -0px !important;
+	background: #e5af21;
+	border-radius: 5px;
+	padding: 5px !important;
+	box-shadow: 0px 0px 5px #333;
+}
+.titleSearch{
+	font-size: 20px; 
+	color:#2b2b2c;
+	text-align:center;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.checkbocProperties{
+	margin-left:5px;
+}
+
+.checkboxOption{
+	font-weight:bold;
+	font-size: 13px;
+}
+
+.checkboxOptionMain{
+	color: red;
+	font-weight:bold;
+	font-size: 13px;
+}
+.checkboxOptionPrice{
+	font-weight:bold;
+	font-size: 13px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+#slider-range-min{
+	 
+	margin-bottom: 16px;
+	background: #333 !important; 
+	min-height: 5px !important; 
+	height:5px !important; 
+}
+.findProperty{
+	height: 54px;
+	background: url("../img/backSearch.png") no-repeat;
+	background-position: center center;
+	font-size: 20px;
+	color: #fff;
+	padding-top: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+ 
+} 
+.logo{
+	margin-left: 13px;
+}
+.navbar-header{
+	
+	height: 120px;
+}
+.navbar-default{
+	background:none !important;
+	border:none !important; 
+	box-shadow: none !important;
+	margin-bottom: 10px !important;
+	background: url("../img/te.png") no-repeat !important; 
+	background-position: 500px -5px !important;
+}
+.optionMenu li{
+font-size: 11px;
+text-decoration: underline;
+}
+.optioMenuLiMain{
+	 color: #000 !important;
+	 margin-top: 49px;
+	 font-size: 14px !important;
+	 font-family:Helvetica !important;
+	 text-decoration: none !important;
+	 font-weight: bold;
+	 margin-left: 20px;
+}
+.optioMenuLi{
+ margin-top: 40px;
+ color: #000 !important;
+}
+.optioMenuLi a{
+ color: #000 !important;
+ font-size: 16px;
+ font-weight: 0 !important;
+
+}
+.optionCidade{
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	margin-top: 20px !important;
+	font-weight: bold;
+	font-size: 16px !important;
+	margin-left: 35px;
+}
+
+/* Container */
+.menuMain{
+	background-image: url("../img/backHome.jpg") !important; 
+	height: 58px;
+	border-radius: 5px !important;
+
+}
+.optioSalesUL li{
+	float:left !important;
+	 
+	padding-top: 10px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+	list-style-type: none !important;
+	text-align: center;
+
+}
+.optioSalesUL li a{
+	color: #fff ;
+
+}
+.mainSob{
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+.optioSalesLi{
+	font-weight: 200 !important;
+}
+.optioSalesLiMain{
+	background:#e5af21;
+	width: 120px;color: #000 !important;
+	padding-top: 5px !important;
+	margin-top: 3px;
+	padding-bottom: 1px !important;
+	border-radius: 6px;
+	margin-left: -49px !important;
+}
+.optioSalesLiMain a{
+	color: #2b2b2c !important;
+	font-size: 17px;
+}
+.mainSub{
+	font-size: 16px !important;
+	font-weight: 600;
+	font-family: arial !important;
+	color: #2b2b2c !important;
+}
+.mainSubPropriet{
+	font-size: 17px !important;
+}
+.facebookLike{
+	 margin-top:10px !important;
+	 background:#fff;
+	 padding:20px;
+	 margin-left:0px !important;
+	 border-radius:6px;
+	 height:auto;
+	 margin-bottom:5px;
+}
+.alertImoveis{
+	 margin-left:-3px !important;
+	 margin-top: 30px !important;
+	 height:216px;
+	 background: url("../img/recebaEmail.png") no-repeat !important; 
+	 font-size: 20px;
+	 color:#333;
+	 font-weight: bold; 
+	 text-align: center;
+	 padding-top:140px;
+	 font-family:arial;
+	 color:#2b2b2c;
+	 font-weight: 100;
+	 padding-right: 10px !important;
+}
+.containerDestaque{
+	
+	padding:0px !important ;
+	margin:0px !important ;
+}
+.destaqueOne{
+	background:#fff;
+	margin-top:8px;
+	border-radius: 5px 5px 5px 5px;
+	background: url("../img/tes.png") #fff no-repeat !important; 
+	background-position: 0 250px !important;
+	border-right:5px solid #e2e3e7;
+}
+.figureImg img{
+	margin: auto;
+	border-right:4px solid #272726;
+	border-bottom:3px solid #272726;
+}
+
+.figureImg2 img{
+	margin: auto;
+	border-right:4px solid #e1a200;
+	border-bottom:3px solid #e1a200;
+}
+.destaquetTwo{
+	background:#fff;
+	margin-top:5px;
+	border-radius:5px;
+	 background: url("../img/tes.png") #fff no-repeat !important; 
+	 background-position: 0 250px !important;
+}
+.titleDestaqueOne{
+	font-size: 15px;
+	padding:0px !important;
+	margin:0px !important;
+	margin-left:10px !important;
+	
+}
+.imgDestaqueOne{
+	margin-left:16px !important;
+	margin-right:10px !important;
+	border-right:4px solid #272726;
+	border-bottom:3px solid #272726;
+}
+.imgDestaqueTwo{
+	margin-left:16px !important;
+	margin-right:10px !important;
+	border-right:4px solid #e1a200;
+	border-bottom:3px solid #e1a200;
+}
+.destaquetTwo img{
+
+}
+.destaqueOne img{
+	max-width:none !important;
+	margin-right:-5px !important;
+	margin-top:-35px !important;
+	margin-left:-3px !important;	
+}
+
+.destaquetTwo img{
+	max-width:none !important;
+	margin-right:-5px !important;
+	margin-top:-3px !important;
+	margin-left:-3px !important;
+	 
+}
+
+.textDescribeDestaque{
+	text-align: center;
+	margin-bottom: 9px;
+}
+ 
+.homeMoveis{
+	 
+	margin:0px !important;
+
+}
+.titleMoveis{
+	font-size: 25px;
+	font-weight: 100;
+	text-align: center;
+}
+.imovelDestaque{
+	background: #fff;
+	border-right: 3px solid #e2e3e7;
+	border-bottom:3px solid #e2e3e7;
+	border-radius: 6px;
+}
+.imovelDestaque:hover{
+background: #e5af21;
+}
+.imgMovel img{
+float: left !important;
+margin-left: 0px;
+margin-top: 5px;
+margin-right: 3px;
+margin-bottom: 3px;
+}
+.titleBoxHome{
+	font-size: 18px;
+	margin-top: -10px !important;
+
+}
+.titleImgCategory{
+	background: #000; 
+	position:relative;
+	z-index: 100;
+	margin:0px !important;
+	padding:0px !important;
+}
+.cidadeSelect{
+	font-size: 17px;
+	color:#000 !important;
+	margin-top: 40px !important;
+}
+.destaqueSeo{
+	text-decoration: underline !important;
+	margin-top: 36px !important;
+}
+.destaqueSeo a{
+color:#333 !important;
+}
+.searchProperties select{
+	margin-bottom: 10px;
+}
+.destaqueChmada{
+	padding-top: 10px;
+	padding:0px !important;
+	margin:0px !important;
+}
+.destaqueWatOne{
+	width: 30%;
+	height: 210px;
+	background:red;
+	border:6px solid #fff;
+	border-radius: 5px;
+	margin-left: 19px;
+	float: left;	
+	margin-top: 6px;
+	background: url("../img/casaone.jpg") #fff no-repeat !important; 
+
+}
+.mensagemDestaque{
+text-align: center;
+font-size: 24px;
+color:#fff;
+font-weight: 200;
+background:rgba(000,000,000,0.8);
+height: 95px;
+margin-top: 103px !important;
+padding-top: 20px;
+transition: opacity 0.3s;
+}
+.mensagemDestaque:hover{
+opacity: 0.9;
+}
+.linksMenuBootom{
+	background-image: url("../img/backHome.jpg") !important; 
+	margin-top: 10px !important;
+	padding: 10px;
+	height: 200px !important;
+	padding-left: 110px;
+	border-radius: 6px;
+}
+.linksMenuBootom ul{
+	float: left !important;
+	margin-right: 60px !important;
+}
+.linksMenuBootom ul li{
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.linksMenuBootom ul li a{
+	color:#fff !important;
+}
+.titleMenu{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff !important;
+	list-style-type: none !important;
+}
+.footerMain{
+	background-image: url("../img/der.png")  !important; 
+	background-repeat: repeat-x;
+	margin-top: 30px !important;
+	height: 180px;
+}
+.footerMainTwe{
+	background: #000;
+	height: 100px;
+}
+.footerMensagem{
+	font-size: 16px;
+	text-align: center;
+	font-weight: 100;
+color: #fff;
+}
+.titleDestaque{
+	font-size: 17px;
+	font-weight: 100px;
+	margin-bottom: 50px !important;
+	float: left !important;
+}
+.meuPainel{
+	padding: 10px 50px 10px 50px;
+	background: #e1a200;
+	font-size: 20px;
+	font-weight: 120px;
+	margin-top:40px;
+	color: #000;
+}
+.nameAdmin{
+	color: #fff;
+	font-size: 19px;
+}
+.deslogarUser{
+	color:#fff;
+	text-decoration: underline;
+	font-size: 14px;
+	font-weight: 110;
+	float: right;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

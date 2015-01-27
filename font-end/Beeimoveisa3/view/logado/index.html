@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+       <title>BeeImoveis</title> 
+         <meta charset="UTF-8">
+         <link href='../home/img/favicon.ico' rel='icon' type='image/x-icon'/>
+         <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/css/bootstrap.min.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+         <link href="../home/css/style.css" rel="stylesheet">
+         <link href="../../lib/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet">
+         <script src="../../lib/jquery-ui-1.11.2.custom/external/jquery/jquery.js"></script>
+         <script src="../../lib/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+         <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+         <script src="../home/js/functionality.js"></script>
+  </head>
+  
+  <body>
+
+
+    
+         <main class="contaianer-fluid mainContainer">   
+            <section class="row">
+             <div class="mainRow col-lg-offset-1 col-sm-10 col-md-10">
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img width = "240"src="../home/img/logo.png" class  = "logo"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle cidadeSelect" data-toggle="dropdown" role="button" aria-expanded="false">
+            Distrito federal
+            <span class="glyphicon glyphicon-menu-down">
+            </span>
+          </a>
+        
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        
+        </li>
+
+         <li class = "destaqueSeo"><a href="#">Apartamentos Asa sul</a></li>
+         <li class = "destaqueSeo"><a href="#">Apartamentos Asa norte</a></li>
+         <li class = "destaqueSeo"><a href="#">Casas Asa sul</a></li>
+         <li class = "destaqueSeo"><a href="#">Casas Asa sul</a></li>
+      </ul>
+ 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+           
+                <aside class="asideLeft col-sm-3 col-md-3">
+                    <div class="loginMain col-sm-12 col-md-12">
+                        <form class="form-horizontal">
+                          <articlev class = "nameAdmin">Olá Denisson</article>
+                        <center>
+                            <button class = "meuPainel btn">Meu Painel</button>
+                        </center>
+                        <a href = "#" class = "deslogarUser">Deslogar</a>
+                        </form>
+                     
+                    </div>
+
+                        <div class="searchProperties col-sm-12 col-md-12">
+                            <article class="titleSearch">Busque seu Imóvel</article>
+                
+                            <form>
+                            <center>
+                                <select class="form-control">
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Bairro</option>
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Apartamento</option>
+                                    <option>Cidade</option>
+                                    <option>Cidade</option>
+                                </select>
+
+                            </center> 
+
+                            <div class="checkbocProperties"> 
+                                <label class="checkboxOption">
+                                  <input type="checkbox"> Somente Imóveis prontos
+                                </label> 
+
+                                <label class="checkboxOption">
+                                  <input type="checkbox"> Somente Imóveis em construção
+                                </label>   
+
+                                <label class="checkboxOptionMain">
+                                  <input type="checkbox"> Somente Imóveis de particulares
+                                </label> 
+
+                                <label class="checkboxOption">
+                                  <input type="checkbox"> Aceitar Imóvel de menor valor
+                                </label> 
+                            </div>     
+                            <center>
+                                 <input class="span11 form-control" type="text" placeholder="Localização (Ex, Bloco)">
+                            </center>
+
+                            <label class="checkboxOptionPrice">
+                            Preço até
+                            </label>
+                            <center>    
+                            <div id="slider-range-min" class="col-lg-offset-1 col-sm-10 col-md-10"></div>
+                            <input type="text" class="span11 form-control" id="amount" readonly="" style="border:0; color:#000; font-weight:bold;">
+                            <div class="findProperty col-sm-11 col-md-11">
+                                Encontre Imóvel
+                            </div>
+                            </center>
+                          
+                          </form>
+                          </div>
+                        
+                          <div class="facebookLike col-sm-12 col-md-12">
+              <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=220&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:220px; height:290px;" allowtransparency="true"></iframe>
+                           </div>
+                        
+                          <div class="alertImoveis col-sm-12 col-md-12">
+                            Receba alertas sobre o imóvel que procura
+                          </div>
+                             
+                    </aside> 
+
+                    <aside class="asideRight col-sm-8 col-md-8">
+                            
+                            <div class="menuMain col-sm-12 col-md-12">
+                                <ul class="optioSalesUL">    
+                                  <li class="optioSalesLiMain .col-md-5">
+                                      <a href="#">
+                                          </a><a class="mainSubPropriet">Anunciar</a> 
+                                              <span class="mainSub"><br>
+                                                 meu Imóvel
+                                              </span>
+                                      
+                                  </li>
+                                  <li class="optioSalesLi">
+                                      <a href="#">
+                                          Comprar 
+                                              <span class="mainSob"><br>
+                                                 Imóveis
+                                              </span>
+                                      </a>
+                                  </li>
+                                  <li class="optioSalesLi">
+                                      <a href="#">
+                                          Imóveis 
+                                              <span class="mainSob"><br>
+                                                 a Venda
+                                              </span>
+                                      </a>
+                                  </li>
+                                  <li class="optioSalesLi">
+                                      <a href="#">
+                                          Imóveis 
+                                              <span class="mainSob"><br>
+                                                 para Alugar
+                                              </span>
+                                      </a>
+                                  </li>
+                                  <li class="optioSalesLi">
+                                      <a href="#">
+                                          Imóveis 
+                                              <span class="mainSob"><br>
+                                                 Comerciais
+                                              </span>
+                                      </a>
+                                  </li>
+                                  <li class="optioSalesLi">
+                                      <a href="#">
+                                          Planos 
+                                              <span class="mainSob"><br>
+                                                 e valores
+                                              </span>
+                                      </a>
+                                  </li>
+                                  <li class="optioSalesLi">
+                                      <a href="#">
+                                          Fale 
+                                              <span class="mainSob"><br>
+                                                 Conosco
+                                              </span>
+                                      </a>
+                                  </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="containerDestaque col-sm-12 col-md-12">
+                              <div class="destaqueOne col-sm-6 col-md-6">
+                                <center>
+
+                                <h5 class = "titleDestaque">Casa em destaque!!</h5>  
+
+                                <figure class = "figureImg">
+                                    <img width = "100%" src = "../home/img/ApDestaqueOne.jpg" />
+                               </figure>
+                                
+                                <article class="textDescribeDestaque">
+                                Lorem Ipsum é simplesmente uma si quando um impresalto para a editosencialmente inalterado. Se popularizou na década de 60, quanegrado a 
+                                </article>            
+                                
+                              </center>
+                                </div>       
+
+                                <div class="destaqueOne col-sm-6 col-md-6">
+                                <center>
+
+                                <h5 class = "titleDestaque">Casa em destaque!!</h5>  
+
+                                <figure class = "figureImg2">
+                                    <img width = "100%" src = "../home/img/ApDestaqueOne.jpg" />
+                               </figure>
+                                
+                                <article class="textDescribeDestaque">
+                                Lorem Ipsum é simplesmente uma si quando um impresalto para a editosencialmente inalterado. Se popularizou na década de 60, quanegrado a 
+                                </article>            
+                                
+                              </center>
+                                </div>                    
+                              </div>
+                              
+                              
+                              
+                             
+                            
+                            <div class="homeMoveis col-sm-12 col-md-12">
+                                <h1 class="titleMoveis">Imóveis em Brasilia</h1>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                <div class="imovelDestaque col-sm-6 col-md-6">
+                                    <figure class="imgMovel">
+                                        <img src="../home/img/casa_topo.png" width="140">
+                                    </figure>
+                                    <span>
+                                        <span class="titleBoxHome">Apartamento Legal</span><br>
+                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                                    </span>
+                                </div>
+
+                                
+                              </div>    
+                                <div class = "destaqueChmada col-sm-12 col-md-12">
+                                        <div class = "destaqueWatOne ">
+                                            <div class = "mensagemDestaque">
+                                                Porquer vender sem corretor?
+                                            </div>
+                                        </div>
+
+                                        <div class = "destaqueWatOne">
+                                             <div class = "mensagemDestaque">
+                                                Porquer vender sem corretor?
+                                            </div>
+                                        </div>
+
+                                        <div class = "destaqueWatOne">
+                                             <div class = "mensagemDestaque">
+                                                Porquer vender sem corretor?
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                    </aside>
+
+                    
+ <footer class = "linksMenuBootom col-sm-11 col-md-11">            
+          
+
+                <ul class = "col-sm-1 col-md-1" >
+                  <li class = "titleMenu">Contatos</li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                </ul>
+
+                <ul class = "col-sm-1 col-md-1">
+                  <li class = "titleMenu">Contatos</li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                </ul>
+
+                <ul class = "col-sm-1 col-md-1">
+                  <li class = "titleMenu">Contatos</li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                </ul>
+
+                <ul class = "col-sm-1 col-md-1">
+                  <li class = "titleMenu">Contatos</li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                </ul>
+
+                <ul class = "col-sm-1 col-md-1">
+                  <li class = "titleMenu">Contatos</li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                </ul>
+
+                <ul class = "col-sm-1 col-md-1">
+                  <li class = "titleMenu">Contatos</li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                  <li><a href = "">Teste</a></li>
+                </ul>
+
+               
+               
+              </footer>
+                </div>       
+            </section>
+       </main>
+      <div class = "footerMain">
+
+      </div>
+      <div class = "footerMainTwe">
+         <div class = "footerMensagem"> Copyright(c) BeeImoveis 2015 - Produzido por 2creative: <a href = "http://www.2creativegames.com.br/" target="_blank" >www.2creativegames.com.br</a></div>
+      </div>
+
+       </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
